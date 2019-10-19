@@ -179,5 +179,7 @@ member.guild.fetchInvites().then(guildInvites => {
       })
       
       }
+      });
+   
 
 client.login(process.env.BOT_TOKEN)
