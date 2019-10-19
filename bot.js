@@ -69,6 +69,10 @@ if (message.author.bot) return;
 }
 });
 
+client.on('serverNewMember', function(server, user) {
+     user.addTo(server.roles.get("member", "member"));
+});
+
 const invites = {};
 const wait = require('util').promisify(setTimeout);
 client.on('ready', () => {
